@@ -6,7 +6,7 @@ html, body {
 
 body {
     color: #000;
-    background: linear-gradient(180deg, rgba(105, 146, 171, 0.7) 100px, rgba(170, 168, 167, 0.5) 200px, rgba(205, 190, 182, 1) 500px), url('media/sequia1.jpg');
+    background: linear-gradient(180deg,rgba(76, 155, 195, 0.7) 100px, rgba(172, 177, 180, 0.5) 200px, rgba(211, 192, 178, 1) 500px), url('media/sequia1.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
     font-family: 'Bitter', serif;
