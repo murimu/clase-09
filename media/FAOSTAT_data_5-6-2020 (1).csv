@@ -1,0 +1,5 @@
+Código Ámbito,Ámbito,Código área,Área,Código Elemento,Elemento,Código Producto,Producto,Código año,Año,Unidad,Valor,Símbolo,Descripción del Símbolo
+"QC","Cultivos","40","Chile","5312","Área cosechada","572","Aguacates","1990","1990","ha","8190","","Datos oficiales"
+"QC","Cultivos","40","Chile","5312","Área cosechada","572","Aguacates","2018","2018","ha","29166","","Datos oficiales"
+"QC","Cultivos","40","Chile","5510","Producción","572","Aguacates","1990","1990","toneladas","37580","","Datos oficiales"
+"QC","Cultivos","40","Chile","5510","Producción","572","Aguacates","2018","2018","toneladas","124506","Im","Datos de FAO basados en una metodología de imputación"
