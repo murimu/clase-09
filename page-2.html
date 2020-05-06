@@ -50,12 +50,15 @@
         <section>
             <h2>Petorca y la industria de la palta</h2>
             <p>Históricamente Petorca fue una provincia ligada a la minería, aunque ahora su principal actividad económica es la agricultura que se desarrolla en torno a los valles de los dos principales ríos de la provincia, Petorca y La Ligua. </p>
-            <p><a href="page-1.html">Déficit en otras regiones de Chile</a>.Como se menciona anteriormente la comuna de Petorca en la región de Valparaíso es una de las muchas afectadas a lo lago de todo Chile</p>
+            <p><a href="page-1.html">Déficit en otras regiones de Chile</a>.Como se menciona anteriormente la comuna de Petorca en la región de Valparaíso
+               es una de las muchas afectadas a lo lago de todo Chile.
+             <br>Por sus características, la palta necesita una importante cantidad de agua para ser cultivada, cerca de 100.000 litros diarios.Hoy se riegan con agua extraída de las napas subterráneas de los dos principales ríos, que superficialmente se secaron hace 10 años y solamente tienen agua unos pocos días durante el invierno. El Río Petorca fue declarado agotado en 1997 y el Río Ligua entró en la misma condición en 2004. El descenso del agua de las napas subterráneas es sostenido. </p>
             <figure>
                 <canvas id="uci"></canvas>
-                <figcaption>http://explorador.cr2.cl/</figcaption>
+                <figcaption> https://www.cienciasambientales.com/es/noticias-ambientales/infografia-fundacion-aquae-huella-hidrica-produccion-de-alimentos-17218figcaption>
             </figure>
-            <p>La provincia de Petorca es la segunda con mayor cultivo de aguacates del país. Según cifras de Modatima, entre 2016 y 2017 la Asociación Gremial de Agricultores de la Provincia de Petorca, exportó 25 millones de toneladas del fruto; en otras palabras "se utilizó 9.650 millones de litros de agua".</p>
+            <p>La provincia de Petorca es la segunda con mayor cultivo de aguacates del país. Según cifras de Modatima, entre 2016 y 2017 la Asociación Gremial de Agricultores de la Provincia
+               de Petorca, exportó 25 millones de toneladas del fruto; en otras palabras "se utilizó 9.650 millones de litros de agua".</p>
         </section>
         <footer>
             <hr>
@@ -63,60 +66,44 @@
                 <time datetime="2020-05-06" class="derecha">Miércoles, 6 de mayo de 2020</time>
             </p>
         </footer>
-    </div>
-    <script src="https://raw.githubusercontent.com/murimu/clase-09/gh-pages/precipitaciones%20promedio%20acumulado%20anual.csv"></script>
-    <script>
-        Chart.defaults.global.defaultFontFamily = "'Lucida Console', 'Monaco', 'monospace'";
-        new Chart(document.getElementById('uci').getContext('2d'), {
-            type: 'bar',
-            data: {
-                labels: ["01/04", "02/04", "03/04", "04/04", "05/04", "06/04", "07/04", "08/04", "09/04", "10/04", "11/04", "12/04", "13/04", "14/04", "15/04", "16/04", "17/04", "18/04", "19/04", "20/04", "21/04", "22/04", "23/04", "24/04", "25/04", "26/04", "27/04", "28/04", "29/04", "30/04"],
-                datasets: [{
-                    label: 'CHILE',
-                    borderColor: '#cc2f59',
-                    backgroundColor: '#cc2f59',
-                    borderWidth: 1,
-                    pointRadius: 2,
-                    lineTension: 0,
-                    data: [16, 18, 22, 27, 34, 37, 43, 48, 57, 65, 73, 80, 82, 92, 94, 105, 116, 126, 133, 139, 147, 160, 168, 174, 181, 189, 198, 207]
-                }, {
-                    label: 'ARGENTINA',
-                    borderColor: '#2b89f5',
-                    backgroundColor: '#2b89f5',
-                    borderWidth: 1,
-                    pointRadius: 2,
-                    lineTension: 0,
-                    data: [28, 36, 39, 43, 44, 48, 56, 63, 72, 82, 83, 90, 97, 102, 111, 115, 123, 129, 132, 136, 147, 152, 165, 176, 185, 192, 197, 207]
-                }, {
-                    label: 'ECUADOR',
-                    borderColor: '#6d2b65', // noten que este color coincide con el de h1{…} en el CSS
-                    backgroundColor: '#6d2b65', // esto para darle consistencia a los colores en uso
-                    borderWidth: 1,
-                    pointRadius: 2,
-                    lineTension: 0,
-                    data: [93, 120, 145, 172, 180, 191, 191, 242, 272, 297, 315, 333, 355, 369, 388, 403, 421, 456, 474, 507, 520, 537, 560, 576, 576, 576, 663, 871]
-                }]
-            },
-            options: {
-                responsive: true,
-                title: {
-                    display: true,
-                    text: 'MUERTES POR COVID19 DURANTE ABRIL, 2020'
-                },
-                tooltips: {
-                    position: 'nearest',
-                },
-                scales: {
-                    xAxes: [{
-                        ticks: {
-                            minRotation: 90
-                        }
-                    }]
-                }
-            },
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+      <script>
+          Chart.defaults.global.defaultFontFamily = "Bitter, 'Monaco', 'monospace'";
+          new Chart(document.getElementById('uci').getContext('2d'), {
+              type: 'bar',
+              data: {
+                  labels: ["Paltas", "Tomates", "Naranjas", "Manzanas","Lechuga", "Maiz", "Lentejas", "Arroz", "Patata"],
+                  datasets: [{
+                      label: 'Litros de H20',
+                      borderColor: '#263D0D',
+                      backgroundColor: '#B3BD65',
+                      borderWidth: 1,
+                      pointRadius: 2,
+                      lineTension: 0,
+                      data: [1200, 13, 110, 70,13, 450, 25, 1700, 25]
+                  }]
+              },
+              options: {
+                  responsive: true,
+                  title: {
+                      display: true,
+                      text: 'Huella hídrica de frutas y verduras'
+                  },
+                  tooltips: {
+                      position: 'nearest',
+                  },
+                  scales: {
+                      xAxes: [{
+                          ticks: {
+                              minRotation: 90
+                          }
+                      }]
+                  }
+              },
 
-        });
-    </script>
-</body>
+          });
+      </script>
+  </body>
 
-</html>
+  </html>
